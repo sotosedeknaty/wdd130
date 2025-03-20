@@ -1,0 +1,49 @@
+.callout {
+    max-width: 600px;
+    margin: 20px auto;
+    border: 2px solid #333;
+    padding: 10px;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+img {
+    float: left;
+    /*Makes the image shift to the left */
+    margin: 10px;
+    /* Space around the image */
+    border: 2px solid #333;
+    /* Image border */
+    padding: 5px;
+    /* Internal space between the border and the image */
+    background-color: #f1f1f1;
+    /* background color */
+    width: 150px;
+    /* Image width */
+    height: auto;
+    /* Maintains the proportion of the image */
+}
+
+blockquote {
+    margin: 20px 40px;
+    /* Top/bottom and right/left margins */
+    font-style: italic;
+    /* Italic text */
+    color: #555;
+    /*Text color  */
+}
+
+cite {
+    display: block;
+    /* Displays the element as a block */
+    border-top: 1px solid #ccc;
+    /* Top line */
+    padding-top: 10px;
+    /* Space above content */
+    text-align: right;
+    /* Right alignment */
+    font-size: 0.9em;
+    /* Slightly smaller font size */
+    color: #777;
+    /* Lighter text color */
+}
