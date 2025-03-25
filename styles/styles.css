@@ -1,3 +1,10 @@
+:root {
+    --primary-color: darkblue;
+    --secondary-color: white;
+    --border-color: #333;
+    --background-light: #f9f9f9;
+}
+
 /* Style for the <nav> element */
 nav {
     background-color: darkblue;
