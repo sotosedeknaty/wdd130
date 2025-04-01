@@ -1,0 +1,138 @@
+/* Root Selector: Defining Color Variables */
+:root {
+  --primary-color: #F72585; /* Vibrant Red */
+  --secondary-color: #7209b7; /* Deep Purple */
+  --accent-1-color: #3a0ca3; /* Strong Blue */
+  --accent-2-color: #4361ee; /* Bright Blue */
+  --background-color: #4cc9f0; /* Light Blue */
+}
+
+/* General Reset for Body */
+body {
+  margin: 0;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: var(--primary-color);
+  background-color: var(--background-color);
+}
+
+/* Header Section */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: var(--secondary-color);
+}
+
+header img {
+  max-height: 50px;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--accent-1-color);
+  margin: 0 1rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700; /* Bold text for header links */
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  text-align: center;
+  background: url('../images/hero.jpg') no-repeat center/cover;
+  height: 400px;
+}
+
+.hero h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--accent-2-color);
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700; /* Bold */
+  font-size: 2.5rem;
+}
+
+.hero article {
+  position: absolute;
+  bottom: 10%;
+  left: 5%;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+.hero article img {
+  float: right;
+  max-width: 150px;
+  margin-left: 1rem;
+}
+
+.hero article p {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 400; /* Regular weight for text */
+  color: var(--primary-color);
+}
+
+/* Content Sections */
+section {
+  padding: 2rem;
+}
+
+section h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700; /* Bold headings */
+  color: var(--secondary-color);
+}
+
+section p {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 400; /* Regular weight for paragraphs */
+  color: var(--primary-color);
+  line-height: 1.5;
+}
+
+/* Images in Adventure Section */
+section img {
+  display: block;
+  max-width: 100%;
+  margin: 1rem auto;
+  height: auto; /* Ensures correct image scaling */
+}
+
+/* Social Media Links */
+footer a img {
+  display: inline-block;
+  width: 30px;
+  margin: 0 0.5rem;
+}
+
+footer a {
+  text-decoration: none; /* Removes underline from social media links */
+}
+
+/* Footer Section */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: var(--primary-color);
+  color: var(--background-color);
+}
+
+footer p {
+  margin-bottom: 1rem;
+}
+
+/* Lazy Loading and Optimization */
+img {
+  loading: lazy; /* Enables lazy loading for non-critical images */
+}
+
+/* Picture Element for Responsive Images */
+picture img {
+  width: 100%;
+  height: auto; /* Maintains aspect ratio and fills the container */
+  display: block;
+}
