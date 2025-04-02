@@ -1,10 +1,10 @@
 /* Root Selector: Defining Color Variables */
 :root {
   --primary-color: #F72585; /* Vibrant Red */
-  --secondary-color: #7209b7; /* Deep Purple */
+  --secondary-color:#4cc9f0 ; /* Deep Purple */
   --accent-1-color: #3a0ca3; /* Strong Blue */
   --accent-2-color: #4361ee; /* Bright Blue */
-  --background-color: #4cc9f0; /* Light Blue */
+  --background-color:#7209b7 ; /* Light Blue */
 }
 
 /* General Reset for Body */
