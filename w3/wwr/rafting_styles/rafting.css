@@ -1,18 +1,13 @@
-/* Root Selector: Defining Color Variables */
+/* Root Selector */
 :root {
-  --primary-color: #F72585;
-  /* Vibrant Red */
-  --secondary-color: #4cc9f0;
-  /* Deep Purple */
-  --accent-1-color: #3a0ca3;
-  /* Strong Blue */
-  --accent-2-color: #4361ee;
-  /* Bright Blue */
-  --background-color: #7209b7;
-  /* Light Blue */
+  --primary-color: #F72585; /* Vibrant Red */
+  --secondary-color: #4cc9f0; /* Deep Purple */
+  --accent-1-color: #3a0ca3; /* Strong Blue */
+  --accent-2-color: #4361ee; /* Bright Blue */
+  --background-color: #7209b7; /* Light Blue */
 }
 
-/* General Reset for Body */
+/* General Reset */
 body {
   margin: 0;
   font-family: 'Source Sans Pro', sans-serif;
@@ -22,8 +17,8 @@ body {
 
 /* Header Section */
 header {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: auto 1fr auto; /* Logo, empty space, navigation */
   align-items: center;
   padding: 1rem;
   background-color: var(--secondary-color);
@@ -33,57 +28,28 @@ header img {
   max-height: 50px;
 }
 
-header {
-  display: grid;
-  grid-template-columns: auto 1fr auto;
-  /* Logo, space, navigation. */
-  align-items: center;
-  padding: 1rem;
-  background-color: var(--secondary-color);
-}
-
 nav {
   display: flex;
   justify-content: flex-end;
-  /* Alinea los elementos a la derecha */
   gap: 1rem;
-  /* Espaciado entre enlaces */
 }
 
 nav ul {
-  display: flex;
-  /* Define el ul como el contenedor flex */
-  list-style: none;
-  /* Elimina los puntos de lista */
+  display: flex; /* Flex layout for navigation */
+  list-style: none; /* Remove bullets */
   margin: 0;
   padding: 0;
 }
 
 nav li {
-  margin: 0 1rem;
-  /* Espaciado entre elementos de la lista */
+  margin: 0 1rem; /* Space between links */
 }
 
-nav {
-  display: flex;
-  justify-content: flex-end;
-  /* Aligns elements to the right */
-  gap: 1rem;
-  /* Space between links */
-}
-
-nav ul {
-  display: flex;
-  /* Defines the ul as the flex container */
-  list-style: none;
-  /* Removes bullet points from the list */
-  margin: 0;
-  padding: 0;
-}
-
-nav li {
-  margin: 0 1rem;
-  /* Space between list items */
+nav a {
+  text-decoration: none;
+  color: var(--accent-1-color);
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
 }
 
 /* Hero Section */
@@ -102,7 +68,6 @@ nav li {
   color: var(--accent-2-color);
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
-  /* Bold */
   font-size: 2.5rem;
 }
 
@@ -123,58 +88,19 @@ nav li {
 
 .hero article p {
   font-family: 'Source Sans Pro', sans-serif;
-  font-weight: 400;
-  /* Regular weight for text */
   color: var(--primary-color);
 }
 
 /* History Section */
 .history-section {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2rem;
   padding: 2rem;
-}
-
-.history-section img {
-  max-width: 100%;
-  height: auto;
-  grid-column: span 1;
-}
-
-/* Content Sections */
-section {
-  padding: 2rem;
-}
-
-section h2 {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
-  /* Bold headings */
-  color: var(--secondary-color);
-}
-
-section p {
-  font-family: 'Source Sans Pro', sans-serif;
-  font-weight: 400;
-  /* Regular weight for paragraphs */
-  color: var(--primary-color);
   line-height: 1.5;
-}
-
-/* Images in Adventure Section */
-section img {
-  display: block;
-  max-width: 100%;
-  margin: 1rem auto;
-  height: auto;
-  /* Ensures correct image scaling */
 }
 
 /* Adventures Section */
 .adventures {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(5, 1fr); /* Five equal columns */
   gap: 1rem;
   padding: 2rem;
 }
@@ -187,45 +113,26 @@ section img {
   max-width: 100%;
   height: auto;
 }
+
 .adventures figcaption {
   font-family: 'Source Sans Pro', sans-serif;
+  font-size: 0.9rem;
   color: var(--accent-1-color);
   margin-top: 0.5rem;
-}
-/* Social Media Links */
-footer a img {
-  display: inline-block;
-  width: 30px;
-  margin: 0 0.5rem;
-}
-
-footer a {
-  text-decoration: none;
-  /* Removes underline from social media links */
 }
 
 /* Footer Section */
 footer {
-  text-align: center;
+  display: flex;
+  justify-content: flex-end; /* Align to the right */
+  align-items: center;
   padding: 1rem;
   background-color: var(--primary-color);
   color: var(--background-color);
 }
 
-footer p {
-  margin-bottom: 1rem;
-}
-
-/* Lazy Loading and Optimization */
-img {
-  loading: lazy;
-  /* Enables lazy loading for non-critical images */
-}
-
-/* Picture Element for Responsive Images */
-picture img {
-  width: 100%;
+footer a img {
+  width: 30px;
   height: auto;
-  /* Maintains aspect ratio and fills the container */
-  display: block;
+  margin: 0 0.5rem;
 }
