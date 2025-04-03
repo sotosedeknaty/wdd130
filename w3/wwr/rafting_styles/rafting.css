@@ -1,10 +1,15 @@
 /* Root Selector */
 :root {
-  --primary-color: #F72585; /* Vibrant Red */
-  --secondary-color: #4cc9f0; /* Deep Purple */
-  --accent-1-color: #3a0ca3; /* Strong Blue */
-  --accent-2-color: #4361ee; /* Bright Blue */
-  --background-color: #7209b7; /* Light Blue */
+  --primary-color: #F72585;
+  /* Vibrant Red */
+  --secondary-color: #4cc9f0;
+  /* Deep Purple */
+  --accent-1-color: #3a0ca3;
+  /* Strong Blue */
+  --accent-2-color: #4361ee;
+  /* Bright Blue */
+  --background-color: #7209b7;
+  /* Light Blue */
 }
 
 /* General Reset */
@@ -18,7 +23,8 @@ body {
 /* Header Section */
 header {
   display: grid;
-  grid-template-columns: auto 1fr auto; /* Logo, empty space, navigation */
+  grid-template-columns: auto 1fr auto;
+  /* Logo, empty space, navigation */
   align-items: center;
   padding: 1rem;
   background-color: var(--secondary-color);
@@ -35,14 +41,17 @@ nav {
 }
 
 nav ul {
-  display: flex; /* Flex layout for navigation */
-  list-style: none; /* Remove bullets */
+  display: flex;
+  /* Flex layout for navigation */
+  list-style: none;
+  /* Remove bullets */
   margin: 0;
   padding: 0;
 }
 
 nav li {
-  margin: 0 1rem; /* Space between links */
+  margin: 0 1rem;
+  /* Space between links */
 }
 
 nav a {
@@ -56,8 +65,12 @@ nav a {
 .hero {
   position: relative;
   text-align: center;
-  background: url('../images/hero.jpg') no-repeat center/cover;
-  height: 400px;
+}
+
+.hero img {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 .hero h1 {
@@ -100,7 +113,8 @@ nav a {
 /* Adventures Section */
 .adventures {
   display: grid;
-  grid-template-columns: repeat(5, 1fr); /* Five equal columns */
+  grid-template-columns: repeat(5, 1fr);
+  /* Five equal columns */
   gap: 1rem;
   padding: 2rem;
 }
@@ -124,7 +138,8 @@ nav a {
 /* Footer Section */
 footer {
   display: flex;
-  justify-content: flex-end; /* Align to the right */
+  justify-content: flex-end;
+  /* Align to the right */
   align-items: center;
   padding: 1rem;
   background-color: var(--primary-color);
