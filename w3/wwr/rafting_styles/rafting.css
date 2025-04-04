@@ -105,9 +105,33 @@ nav a {
 }
 
 /* History Section */
-.history-section {
-  padding: 2rem;
-  line-height: 1.5;
+.history-section .image-container {
+  display: flex;
+  /* Align items horizontally */
+  align-items: center;
+  /* Align items vertically */
+  justify-content: center;
+  /* Center items in the container */
+  gap: 20px;
+  /* Space between elements */
+}
+
+.history-section .image-container img {
+  max-width: 30%;
+  /* Adjust image size */
+  border: 2px solid #ddd;
+  /* Add a border to the image */
+  border-radius: 8px;
+  /* Round the edges */
+}
+
+.history-section .image-container p {
+  max-width: 30%;
+  /* Limit text width */
+  text-align: center;
+  /* Center-align the text */
+  font-family: 'Source Sans Pro', sans-serif;
+  /* Apply font style */
 }
 
 /* Adventures Section */
@@ -126,6 +150,8 @@ nav a {
 .adventures img {
   max-width: 100%;
   height: auto;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .adventures figcaption {
