@@ -134,6 +134,14 @@ nav a {
   /* Apply font style */
 }
 
+.history-section h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+}
+
+
 /* Adventures Section */
 .adventures {
   display: grid;
