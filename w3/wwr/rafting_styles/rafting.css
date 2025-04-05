@@ -1,15 +1,16 @@
 /* Root Selector */
 :root {
-  --primary-color: #F72585;
-  /* Vibrant Red */
-  --secondary-color: #4cc9f0;
-  /* Deep Purple */
-  --accent-1-color: #3a0ca3;
-  /* Strong Blue */
-  --accent-2-color: #4361ee;
-  /* Bright Blue */
-  --background-color: #7209b7;
-  /* Light Blue */
+  --primary-color: #4CAF50;
+  /* Verde suave */
+  --secondary-color: #FFFFFF;
+  /* Blanco */
+  --accent-1-color: #FF9800;
+  /* Naranja vibrante */
+  --accent-2-color: #007BFF;
+  /* Azul brillante */
+  --background-color: #F4F4F4;
+  /* Gris claro */
+
 }
 
 /* General Reset */
@@ -75,7 +76,7 @@ nav a {
 
 .hero h1 {
   position: absolute;
-  top: 50%;
+  top: 15%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: var(--accent-2-color);
@@ -87,7 +88,8 @@ nav a {
 .hero article {
   position: absolute;
   bottom: 10%;
-  left: 5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   background-color: rgba(255, 255, 255, 0.8);
   padding: 1rem;
   border-radius: 5px;
@@ -144,6 +146,7 @@ nav a {
 
 /* Adventures Section */
 .adventures {
+  text-align: center;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   /* Five equal columns */
@@ -169,12 +172,16 @@ nav a {
   margin-top: 0.5rem;
 }
 
+.adventures h2 {
+  grid-column: 1/6;
+}
+
 /* Footer Section */
 footer {
-  display: flex;
-  justify-content: flex-end;
+  display: grid;
+  grid-template-columns: 6fr 3fr;
   /* Align to the right */
-  align-items: center;
+  justify-items: right;
   padding: 1rem;
   background-color: var(--primary-color);
   color: var(--background-color);
