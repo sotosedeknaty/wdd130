@@ -295,3 +295,17 @@ footer div:last-of-type a {
   font-style: italic; /* Make it visually distinct */
   margin-top: 15px;
 }
+
+iframe {
+  max-width: 400px;
+}
+
+.selection-input input {
+  max-width: 1rem;
+}
+
+textarea {
+  min-width: 400px;
+  height: 100px;
+  margin-bottom: 3rem;
+}
