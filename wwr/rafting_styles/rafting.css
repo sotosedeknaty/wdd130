@@ -309,3 +309,50 @@ textarea {
   height: 100px;
   margin-bottom: 3rem;
 }
+
+.hero img {
+  height: 400px; /* Change 400px to the desired height */
+  width: auto;/* Maintains image proportions */ 
+}
+
+.about-grid img {
+  height: 300px; /* Change 300px to the desired height */
+  width: auto;/* Maintain proper proportions */
+} 
+
+.hero {
+  position: relative;
+  background-image: url('rafting_images/hero_home.jpg'); /* Imagen de fondo */
+  background-size: cover; /* Asegura que la imagen cubra todo el contenedor */
+  background-position: center; /* Centra la imagen */
+  height: 400px; /* Ajusta el alto deseado para la sección */
+}
+
+.hero {
+  position: relative;
+}
+
+.hero img {
+  width: auto; /* Asegura que la imagen ocupe todo el ancho */
+  height: auto; /* Mantiene las proporciones */
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  font-size: 2rem;
+  width: max-content;
+}
+
+.hero-text::after {
+  content: "";
+  display: block;
+  background-color: #4CAF50; /* Fondo verde */
+  height: 10px; /* Altura de la línea */
+  width: 100%; /* Ancho de la línea */
+  margin-top: 10px; /* Espaciado respecto al texto */
+}
