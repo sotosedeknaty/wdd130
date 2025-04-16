@@ -1,10 +1,10 @@
 /* Root Selector */
 :root {
-  --primary-color: #4CAF50;
+  --primary-color: #0c690f;
   /* Verde suave */
   --secondary-color: #FFFFFF;
   /* Blanco */
-  --accent-1-color: #FF9800;
+  --accent-1-color: #fa4f0bfa;
   /* Naranja vibrante */
   --accent-2-color: #007BFF;
   /* Azul brillante */
@@ -22,14 +22,7 @@ body {
 }
 
 /* Header Section */
-header {
-  display: grid;
-  grid-template-columns: auto 1fr auto;
-  /* Logo, empty space, navigation */
-  align-items: center;
-  padding: 1rem;
-  background-color: var(--secondary-color);
-}
+
 
 header img {
   max-height: 50px;
@@ -169,7 +162,7 @@ contact-form textarea,
   bottom: 10%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.966);
   padding: 1rem;
   border-radius: 5px;
 }
@@ -310,31 +303,26 @@ textarea {
   margin-bottom: 3rem;
 }
 
-.hero img {
-  height: 400px; /* Change 400px to the desired height */
-  width: auto;/* Maintains image proportions */ 
-}
-
 .about-grid img {
   height: 300px; /* Change 300px to the desired height */
   width: auto;/* Maintain proper proportions */
 } 
 
-.hero {
+.hero_home {
   position: relative;
   background-image: url('rafting_images/hero_home.jpg'); /* Imagen de fondo */
-  background-size: cover; /* Asegura que la imagen cubra todo el contenedor */
-  background-position: center; /* Centra la imagen */
-  height: 400px; /* Ajusta el alto deseado para la sección */
+  background-size: cover; /* Ensures the image covers the entire container */
+  background-position: center; /* Center the image */
+  
 }
 
-.hero {
+.hero_home {
   position: relative;
 }
 
-.hero img {
-  width: auto; /* Asegura que la imagen ocupe todo el ancho */
-  height: auto; /* Mantiene las proporciones */
+.hero_home img {
+  width: 100%; /* Ensures the image fills the entire width */
+  height: auto; /* Maintains proportions */
 }
 
 .hero-text {
@@ -346,15 +334,9 @@ textarea {
   text-align: center;
   font-size: 2rem;
   width: max-content;
-}
-
-.hero-text::after {
-  content: "";
-  display: block;
-  background-color: #4CAF50; /* Green background */
-  height: 10px; /* Line height */
-  width: 100%; /* Line width */
-  margin-top: 10px; /* Spacing relative to text */
+  background-color: #1e5f21;
+  padding: 0 2rem;
+  border-radius: 50px;
 }
 
 /* General */
@@ -367,7 +349,7 @@ body {
 }
 
 header {
-  background-color: #4CAF50;
+  background-color: #1e5f21;
   color: white;
   padding: 10px 20px;
   display: flex;
@@ -400,13 +382,13 @@ nav ul li a {
 .cta {
   text-align: center;
   padding: 20px;
-  background-color: #1E90FF; /* Azul contrastante */
+  background-color: #062646; /* Azul contrastante */
   color: white;
 }
 
 .cta-button {
   background-color: white;
-  color: #1E90FF;
+  color: #052749;
   padding: 10px 20px;
   border-radius: 5px;
   text-decoration: none;
@@ -476,4 +458,18 @@ footer a {
 
 footer a:hover {
   text-decoration: underline;
+}
+
+.home-grid {
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  text-align: center;
+}
+
+.home-grid img{
+  height: 300px;
+}
+
+.home-grid div {
+  margin: 4rem 0;
 }
